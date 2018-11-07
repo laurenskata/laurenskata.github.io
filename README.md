@@ -1,2 +1,2 @@
-# lverhulst
-Portfolio website
+# Biomedical Engineering Portfolio
+Author: @laurenskata
