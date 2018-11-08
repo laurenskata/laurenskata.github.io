@@ -4,51 +4,200 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script src="index.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<title>Portfolio</title>
 </head>
 <body>
-<section class="hero is-primary">
+<section class="hero is-light">
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
-        Primary title
+        Laurens Verhulst
       </h1>
       <h2 class="subtitle">
-        Primary subtitle
+        Biomedical Engineer
       </h2>
     </div>
   </div>
 </section>
-<div class="container">
-<div class="columns">
-  <div class="column">
-    <div class="card">
-	  <div class="card-image">
-	    <figure class="image is-4by3">
-	      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-	    </figure>
-	  </div>
-	  <div class="card-content">
-	    <div class="content">
-	      <h3>Title</h3>
-	      <div class="tags-container"><span class="tag is-dark">Group</span> <span class="tag is-dark">Medical Device Design</span> <span class="tag is-dark">Neural</span></div>
-	      <br>
-	    </div>
-	  </div>
 
+<section class="section"> <!-- Biography section start -->
+	<div class="container">
+		<h1 class="title">Biography</h1>
+		<div class="columns">
+			<div class="column">
+				<img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+			</div>
+			<div class="column">
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam sapien elit, consequat eget, tristique non, venenatis quis, ante. Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Sed ac dolor sit amet purus malesuada congue. Fusce consectetuer risus a nunc. Aliquam erat volutpat. Sed ac dolor sit amet purus malesuada congue. Nulla quis diam. Vivamus luctus egestas leo. Mauris dictum facilisis augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu. Mauris tincidunt sem sed arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Integer in sapien. Aenean placerat.</p>
+
+				<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Aliquam erat volutpat. Curabitur vitae diam non enim vestibulum interdum. Curabitur sagittis hendrerit ante. Quisque tincidunt scelerisque libero. Nulla non arcu lacinia neque faucibus fringilla. Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo. Praesent vitae arcu tempor neque lacinia pretium. Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu. Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est.</p>
+
+				<p>Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus. Mauris elementum mauris vitae tortor. Phasellus faucibus molestie nisl. Fusce tellus. Quisque tincidunt scelerisque libero. Fusce suscipit libero eget elit. Nulla est. Praesent in mauris eu tortor porttitor accumsan. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Morbi scelerisque luctus velit.</p>
+			</div>
+		</div>
 	</div>
-  </div>
-  <div class="column">
-    Second column
-  </div>
-  <div class="column">
-    Third column
-  </div>
-  <div class="column">
-    Fourth column
-  </div>
-</div>
-</div>
+</section> <!-- Biography section end -->
+
+
+<section class="section"> <!-- Projects section start -->
+	<div class="container">
+		<h1 class="title">Projects</h1>
+		<div class="dropdown"> <!-- add JS trigger-->
+		  <div class="dropdown-trigger"> 
+		    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+		      <span>Dropdown button</span>
+		      <span class="icon is-small">
+		        <i class="fas fa-angle-down" aria-hidden="true"></i>
+		      </span>
+		    </button>
+		  </div>
+		  <div class="dropdown-menu" id="dropdown-menu" role="menu">
+		    <div class="dropdown-content">
+		      <a class="dropdown-item">
+		      	Rehabilitation
+		      </a>
+		      <a class="dropdown-item">
+		        <span class="icon is-small">
+      				<i class="fas fa-check"></i>
+    			</span>
+		        Group
+		      </a>
+		      <a class="dropdown-item">
+		        <span class="icon is-small">
+      				<i class="fas fa-check"></i>
+    			</span>
+		        Medical Device Design
+		      </a>
+		      <a class="dropdown-item">
+		        <span class="icon is-small">
+      				<i class="fas fa-check"></i>
+    			</span>
+		        Neural Engineering
+		      </a>
+		    </div>
+		  </div>
+		</div>
+		<div class="columns">
+			  <div class="column">
+			    <div class="card">
+				  <div class="card-image">
+				    <figure class="image is-4by3">
+				      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+				    </figure>
+				  </div>
+				  <div class="card-content">
+				    <div class="content">
+				      <h3 class="is-3">Project 1</h3>
+				      <a class="button is-outlined">Read more</a>
+
+				      <div class="tags"><span class="tag is-dark">Group</span> <span class="tag is-dark">Medical Device Design</span> <span class="tag is-dark">Neural Engineering</span></div>
+				      <br>
+				    </div>
+				  </div>
+				</div>
+			  </div>
+			 <div class="column">
+			    <div class="card">
+				  <div class="card-image">
+				    <figure class="image is-4by3">
+				      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+				    </figure>
+				  </div>
+				  <div class="card-content">
+				    <div class="content">
+				      <h3 class="is-3">Project 2</h3>
+				      <div class="tags"><span class="tag is-dark">Group</span> <span class="tag is-dark">Medical Device Design</span> <span class="tag is-dark">Neural</span></div>
+				      <br>
+				    </div>
+				  </div>
+				</div>
+			 </div>
+			 <div class="column">
+			    <div class="card">
+				  <div class="card-image">
+				    <figure class="image is-4by3">
+				      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+				    </figure>
+				  </div>
+				  <div class="card-content">
+				    <div class="content">
+				      <h3 class="is-3">Project 3</h3>
+				      <div class="tags"><span class="tag is-dark">Group</span> <span class="tag is-dark">Medical Device Design</span> <span class="tag is-dark">Neural</span></div>
+				      <br>
+				    </div>
+				  </div>
+				</div>
+			 </div>
+			 <div class="column">
+			    <div class="card">
+				  <div class="card-image">
+				    <figure class="image is-4by3">
+				      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+				    </figure>
+				  </div>
+				  <div class="card-content">
+				    <div class="content">
+				      <h3 class="is-3">Project 4</h3>
+				      <div class="tags"><span class="tag is-dark">Group</span> <span class="tag is-dark">Medical Device Design</span> <span class="tag is-dark">Neural Engineering</span></div>
+				      <br>
+				    </div>
+				  </div>
+				</div>
+			  </div>
+		</div>
+		<div class="columns">
+			  <div class="column">
+			    <div class="card">
+				  <div class="card-image">
+				    <figure class="image is-4by3">
+				      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+				    </figure>
+				  </div>
+				  <div class="card-content">
+				    <div class="content">
+				      <h3 class="is-3">Project 5</h3>
+				      <div class="tags"><span class="tag is-dark">Group</span> <span class="tag is-dark">Medical Device Design</span> <span class="tag is-dark">Neural Engineering</span></div>
+				      <br>
+				    </div>
+				  </div>
+				</div>
+			  </div>
+			 <div class="column">
+			    <div class="card">
+				  <div class="card-image">
+				    <figure class="image is-4by3">
+				      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+				    </figure>
+				  </div>
+				  <div class="card-content">
+				    <div class="content">
+				      <h3 class="is-3">Project 6</h3>
+				      <div class="tags"><span class="tag is-dark">Group</span> <span class="tag is-dark">Medical Device Design</span> <span class="tag is-dark">Neural</span></div>
+				      <br>
+				    </div>
+				  </div>
+				</div>
+			 </div>
+			 <div class="column">
+			    <div class="card">
+				  <div class="card-image">
+				    <figure class="image is-4by3">
+				      <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+				    </figure>
+				  </div>
+				  <div class="card-content">
+				    <div class="content">
+				      <h3 class="is-3">Project 7</h3>
+				      <div class="tags"><span class="tag is-dark">Group</span> <span class="tag is-dark">Medical Device Design</span> <span class="tag is-dark">Neural Engineering</span></div>
+				      <br>
+				    </div>
+				  </div>
+				</div>
+			  </div>
+		</div>
+	</div>
+</section> <!-- Projects section end -->
 
 </body>
 </htm
