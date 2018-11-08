@@ -1,3 +1,43 @@
 .button-padding-vertical {
 	calc(1em - #{$button-border-width})
 }
+.card {
+  height: 100%;
+}
+.nav-anchor {
+	color: black;
+}
+/*Brain*/
+svg {
+  display: block;
+}
+
+use, path:nth-child(2) {
+  animation: waves 200s linear infinite  
+}
+
+@keyframes waves {
+  0% {
+    stroke-dasharray: 120 20; 
+  }
+  
+  100% {
+    stroke-dasharray: 120 20;
+    stroke-dashoffset: 12000;
+  }
+}
+
+svg > g {
+  transform-origin: 50% 50%;
+  animation: pulse ease .4s infinite alternate;
+  
+  &:nth-child(2) { animation-delay:.0s }
+}
+
+@keyframes pulse {
+  0% { transform: scale(.995) }
+  100% { transform: scale(1); }
+}
+
+path:nth-child(2) { opacity: 1; }
+path { fill: pink; }
