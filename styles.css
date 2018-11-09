@@ -37,3 +37,17 @@ svg > g {
 }
 path:nth-child(2) { opacity: 1; }
 path { fill: pink; }
+/* End Brain */
+
+.fa-envelope {
+  color: black;
+}
+.fa-envelope:hover {
+  color: #DB4437;
+}
+.fa-twitter:hover{
+  color:#1DA1F2;
+}
+.fa-linkedin:hover{
+  color:#0077B5;
+}
