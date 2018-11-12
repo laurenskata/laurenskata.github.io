@@ -1,0 +1,7 @@
+Todo list
+==================
+add tooltip to Email
+Hyperlink smooth scrolling
+Add modal to cards projects
+Navbar centered
+filter tags

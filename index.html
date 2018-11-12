@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="has-navbar-fixed-top">
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<script src="index.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
@@ -23,9 +24,6 @@
 					<a class="navbar-item" href="#Experience">
 						Experience
 					</a>
-					<a class="navbar-item" href="#Education">
-						Education
-					</a>
 					<a class="navbar-item" href="#Contact">
 						Contact
 					</a>
@@ -40,7 +38,8 @@
 				</div>
 			</nav>
 		</div>
-		<section class="section is-light">
+		<section class="section full-screen is-light">
+			<a name="Home" class="anchor">Test</a> <!-- Intro page-->
 			<div class="container">
 				<div class="columns is-centered">
 					<div class="column is-half">
@@ -50,6 +49,7 @@
 						<h2 class="subtitle has-text-centered">
 						Biomedical Engineer
 						</h2>
+						<div id="wrench"></div>
 						<svg
 						xmlns="http://www.w3.org/2000/svg"
 						xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -79,7 +79,9 @@
 		
 		<section class="section"> <!-- Projects -->
 		<div class="container">
-			<h1 class="title"><a name="Projects" class="nav-anchor"></a>Projects</a></h1>
+			<h1 class="title">
+				<a name="Projects" class="nav-anchor anchor"></a>
+				Projects</a></h1>
 			<div class="buttons">
 				<div class="dropdown">
 					<div class="dropdown-trigger">
@@ -179,7 +181,9 @@
 							<div class="content">
 								<h3 class="title is-3">Medical Device Design</h3>
 								<h3 class="subtitle is-6">Module</h3>
-								<div class="tags"><span class="tag is-dark">Medical Devices</span> <span class="tag is-dark">Design</span> <span class="tag is-dark">Group</span></div>
+								<div class="tags">
+									<span class="tag is-dark">Medical Devices</span> <span class="tag is-dark">Design</span> <span class="tag is-dark">Group</span>
+								</div>
 								<div class="buttons">
 									<a class="button is-outlined">Read more</a>
 								</div>
@@ -190,7 +194,7 @@
 				<div class="column">
 					<div class="card">
 						<div class="card-image">
-							<figure class="image is-3by5">
+							<figure class="image is-3by4">
 								<img src="images/motion-analysis.jpg" alt="Motion analysis">
 							</figure>
 						</div>
@@ -198,7 +202,9 @@
 							<div class="content">
 								<h3 class="title is-3">Motion Analysis</h3>
 								<h3 class="subtitle is-6">Module</h3>
-								<div class="tags"><span class="tag is-dark">Biomechanics</span> <span class="tag is-dark">Analysis</span> <span class="tag is-dark">Group</span></div>
+								<div class="tags">
+									<span class="tag is-dark">Biomechanics</span> <span class="tag is-dark">Analysis</span> <span class="tag is-dark">Group</span>
+								</div>
 								<div class="buttons">
 									<a class="button is-outlined">Read more</a>
 								</div>
@@ -217,7 +223,10 @@
 							<div class="content">
 								<h3 class="is-3">Game Controller Design for Amputee</h3>
 								<h3 class="subtitle is-6">Module</h3>
-								<div class="tags"><span class="tag is-dark">Rehabilitation</span> <span class="tag is-dark">Design</span> <span class="tag is-dark">CAD</span><span class="tag is-dark">Group</span></div>
+								<div class="tags">
+									<span class="tag is-dark">Rehabilitation</span><span class="tag is-dark">Design</span><span class="tag is-dark">CAD</span>
+									<span class="tag is-dark">Group</span><span class="tag is-dark">Rapid prototyping</span>
+								</div>
 								<div class="buttons">
 									<a class="button is-outlined">Read more</a>
 								</div>
@@ -236,7 +245,9 @@
 							<div class="content">
 								<h3 class="title is-3">Robot Grasping Simulation</h3>
 								<h3 class="subtitle is-6">BSc Thesis</h3>
-								<div class="tags"><span class="tag is-dark">Robot</span> <span class="tag is-dark">ROS</span> <span class="tag is-dark">Simulation</span> <span class="tag is-dark">Individual</span></div>
+								<div class="tags">
+									<span class="tag is-dark">Robot</span> <span class="tag is-dark">ROS</span> <span class="tag is-dark">Simulation</span> <span class="tag is-dark">Individual</span>
+								</div>
 								<div class="buttons">
 									<a class="button is-outlined">Read more</a>
 								</div>
@@ -257,7 +268,9 @@
 							<div class="content">
 								<h3 class="is-3">Development and Analysis of perturbed cycling rig</h3>
 								<h3 class="subtitle is-6">ME Thesis</h3>
-								<div class="tags"><span class="tag is-dark">Rehabilitation</span> <span class="tag is-dark">Analysis</span> <span class="tag is-dark">Individual</span></div>
+								<div class="tags">
+									<span class="tag is-dark">Rehabilitation</span><span class="tag is-dark">Analysis</span> <span class="tag is-dark">Individual</span>
+								</div>
 								<div class="buttons">
 									<a class="button is-outlined">Read more</a>
 								</div>
@@ -276,7 +289,8 @@
 							<div class="content">
 								<h3 class="is-3">Game of Life</h3>
 								<h3 class="subtitle is-6">Module</h3>
-								<div class="tags"><span class="tag is-dark">Programming</span>
+								<div class="tags">
+									<span class="tag is-dark">Programming</span>
 									<span class="tag is-dark">Agile Development</span>
 									<span class="tag is-dark">Group</span>
 								</div>
@@ -308,9 +322,9 @@
 			</div>
 		</div>
 		</section> <!-- /Projects-->
-		<section class="section"> <!-- Biography section start -->
+		<section class="section full-screen"> <!-- Biography section start -->
 		<div class="container">
-			<h1 class="title"><a class="nav-anchor" name="Biography">Biography</a></h1>
+			<h1 class="title"><a class="nav-anchor anchor" name="Biography"></a>Biography</h1>
 			<div class="columns">
 				<div class="column">
 					<img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
@@ -321,114 +335,144 @@
 						<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Aliquam erat volutpat. Curabitur vitae diam non enim vestibulum interdum. Curabitur sagittis hendrerit ante. Quisque tincidunt scelerisque libero. Nulla non arcu lacinia neque faucibus fringilla. Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo. Praesent vitae arcu tempor neque lacinia pretium. Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu. Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est.</p>
 						<p>Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus. Mauris elementum mauris vitae tortor. Phasellus faucibus molestie nisl. Fusce tellus. Quisque tincidunt scelerisque libero. Fusce suscipit libero eget elit. Nulla est. Praesent in mauris eu tortor porttitor accumsan. Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Morbi scelerisque luctus velit.</p>
 					</div>
-					<div class="box">
-						<p class="is-large has-text-weight-bold">Hobbies:
-							<span class="icon is-large">
-								<i class="fas fa-3x fa-hiking"></i>
-							</span>
-							<span class="icon is-large">
-								<i class="fas fa-3x fa-camera"></i>
-							</span>
-						</p>
-					</div>
 				</div>
 			</div>
 		</div>
 		</section> <!-- /Biography -->
-		<section class="section"> <!-- Experience start -->
+		<section class="section full-screen"> <!-- Experience start -->
 			<div class="container">
-				<h1 class="title"><a name="Experience" class="nav-anchor">Experience</a></h1>
-				<article class="media">
-						<figure class="media-left">
-							<p class="image is-64x64">
-								<img src="images/nrh.jpg">
-							</p>
-						</figure>
-						<div class="media-content">
-							<div class="content">
-								<p class="title is-5">Rehabilitation Engineer</p>
-								<p class="subtitle is-6">National Rehabilitation Hospital Dublin - <small>June 2018 - September 2018</small></p>
-								<p>
-									Subjects and everything go here so they can see how awesome I am.
+				<div class="columns">
+					<div class="column">
+						<h1 class="title"><a name="Experience" class="nav-anchor anchor"></a>Experience</h1>
+						<article class="media">
+								<figure class="media-left">
+									<p class="image is-64x64">
+										<img src="images/nrh.jpg">
+									</p>
+								</figure>
+								<div class="media-content">
+									<div class="content">
+										<p class="title is-5">Rehabilitation Engineer</p>
+										<p class="subtitle is-6">National Rehabilitation Hospital Dublin - <small>June 2018 - September 2018</small></p>
+										<p>
+											During my internship at the NRH, I was working as part of the Electronic Assistive Technology Clinic. I engaged with patients that were suffering from traumatic brain injury
+											or spinal cord injury. While at the NRH I helped on a great variety of projects, such as AAC technology, Virtual Assistant and Windows Accessiblity.
+										</p>
+									</div>
+								</div>
+						</article>
+						<article class="media">
+								<figure class="media-left">
+									<p class="image is-64x64">
+										<img src="images/keywords.png">
+									</p>
+								</figure>
+								<div class="media-content">
+									<div class="content">
+										<p class="title is-5">Localisation Quality Assurance Tester - Dutch</p>
+										<p class="subtitle is-6">Keywords Studios Ireland - <small>September 2016 - September 2017</small></p>
+										<p>
+											As a QA tester, it was my responsibilty to make sure content was living up to the high standards set by Keywords. I worked on a variety of projects involving
+											Console Games, Mobile Games, Manuals and Customer Support. The high paced environment made working here never boring.
+										</p>
+									</div>
+								</div>
+						</article>
+						<article class="media">
+								<figure class="media-left">
+									<p class="image is-64x64">
+										<img src="images/hit.png">
+									</p>
+								</figure>
+								<div class="media-content">
+									<div class="content">
+										<p class="title is-5">Mechatronics Engineer</p>
+										<p class="subtitle is-6">Heemskerk Innovative Technology Delft - <small>February 2016 - August 2017</small></p>
+										<p>
+											During the last year of my Bachelor study, I developed my Robot Grasping Simulation project at HIT. The team at HIT included many young and bright minds as well as industry professionals.
+											This made working here very fun and educational. The environment was open-minded but critical, this ensured that work was of high quality. 
+										</p>
+									</div>
+								</div>
+						</article>
+						<article class="media">
+							<figure class="media-left">
+								<p class="image is-64x64">
+									<img src="images/ndw.png">
 								</p>
+							</figure>
+							<div class="media-content">
+								<div class="content">
+									<p class="title is-5">Mechatronics Engineer</p>
+									<p class="subtitle is-6">NDW Intern-transportonderdelen - <small>September 2014 - February 2015</small></p>
+									<p>
+										As part of my third year project, I conducted an internship at NDW. NDW is a company that produces transport rollers. The project that I was working on involved the design of an automated roller press.
+									</p>
+								</div>
 							</div>
-						</div>
-				</article>
-				<article class="media">
-						<figure class="media-left">
-							<p class="image is-64x64">
-								<img src="images/keywords.png">
-							</p>
-						</figure>
-						<div class="media-content">
-							<div class="content">
-								<p class="title is-5">Localisation Quality Assurance Tester - Dutch</p>
-								<p class="subtitle is-6">Keywords Studios Ireland - <small>September 2016 - September 2017</small></p>
-								<p>
-									Subjects and everything go here so they can see how awesome I am.
+					</article>
+					</div>
+					<div class="column">
+						<h1 class="title"><a name="Education" class="nav-anchor"></a>Education</h1>
+						<article class="media">
+							<figure class="media-left">
+								<p class="image is-64x64">
+									<img src="images/ucd.jpg">
 								</p>
+							</figure>
+							<div class="media-content">
+								<div class="content">
+									<p class="title is-5">Master of Engineering - Biomedical Engineering</p>
+									<p class="subtitle is-6">University College Dublin - <small>2017-2019</small></p>
+									<p>
+										<strong>Thesis:</strong> The development and testing of a testing rig for investigating the effects of force perturbations during cycling.<br />
+										<strong>Modules:</strong> Neural Engineering, Rehabilitation Engineering, Software Engineering, Medical Device Design, Predictive Analytics, Entrepreneurship, 
+										Neurophysiology, Biomechanics, Biomaterials, Biomedical Imaging
+									</p>
+								</div>
 							</div>
-						</div>
-				</article>
-				<article class="media">
-						<figure class="media-left">
-							<p class="image is-64x64">
-								<img src="images/hit.png">
-							</p>
-						</figure>
-						<div class="media-content">
-							<div class="content">
-								<p class="title is-5">Mechatronics Engineer</p>
-								<p class="subtitle is-6">Heemskerk Innovative Technology Delft - <small>February 2016 - August 2017</small></p>
-								<p>
-									Subjects and everything go here so they can see how awesome I am.
+						</article>
+						<article class="media">
+							<figure class="media-left">
+								<p class="image is-64x64">
+									<img src="images/avans.png">
 								</p>
+							</figure>
+							<div class="media-content">
+								<div class="content">
+									<p class="title is-5">Bachelor of Science - Mechatronics</p>
+									<p class="subtitle is-6">Avans University of Applied Science - <small>2012-2016</small></p>
+									<p>
+										<strong>Thesis:</strong> Behavioral Accuracy Simulation of the Kinova Mico Robotic Arm<br />
+										<strong>Modules:</strong> 
+									</p>
+								</div>
 							</div>
-						</div>
-				</article>
+						</article>
+						<article class="media">
+							<figure class="media-left">
+								<p class="image is-64x64">
+									<img src="images/hdm.png">
+								</p>
+							</figure>
+							<div class="media-content">
+								<div class="content">
+									<p class="title is-5">Erasmus Exchange - Business Information Systems</p>
+									<p class="subtitle is-6">Stuttgart Media University - <small>September 2015-January 2016</small></p>
+									<p>
+										Subjects and everything go here so they can see how awesome I am.
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
 			</div>
 		</section> <!-- /Experience -->
-		<section class="section"> <!-- Education Start -->
+		<section class="section full-screen level-item"> <!--Contact start-->
 			<div class="container">
-				<h1 class="title"><a name="Education" class="nav-anchor"></a>Education</h1>
-				<article class="media">
-						<figure class="media-left">
-							<p class="image is-64x64">
-								<img src="images/ucd.jpg">
-							</p>
-						</figure>
-						<div class="media-content">
-							<div class="content">
-								<p class="title is-5">Master of Engineering - Biomedical Engineering</p>
-								<p class="subtitle is-6">University College Dublin - <small>2017-2019</small></p>
-								<p>
-									Subjects and everything go here so they can see how awesome I am.
-								</p>
-							</div>
-						</div>
-				</article>
-				<article class="media">
-						<figure class="media-left">
-							<p class="image is-64x64">
-								<img src="images/avans.png">
-							</p>
-						</figure>
-						<div class="media-content">
-							<div class="content">
-								<p class="title is-5">Bachelor of Science - Mechatronics</p>
-								<p class="subtitle is-6">Avans University of Applied Science - <small>2012-2016</small></p>
-								<p>
-									Subjects and everything go here so they can see how awesome I am.
-								</p>
-							</div>
-						</div>
-				</article>
-			</div>
-		</section> <!-- /Education -->
-		<section class="section"> <!--Contact start-->
-			<div class="container">
-				<a name="contact" class="nav-anchor"></a>
-				<h1 class="title has-text-centered">Contact Me</h1>
+				<a name="Contact" class="nav-anchor"></a>
+				<h1 class="title has-text-centered">Contact Me</h1><br />
 				<div class="columns is-centered">
 					<div class="column is-1 has-text-centered">
 						<a href="https://www.linkedin.com/in/laurens-verhulst-65336b6a/" class="nav-anchor">
