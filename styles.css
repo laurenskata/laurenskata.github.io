@@ -1,6 +1,12 @@
 .card {
   height: 100%;
 }
+.name {
+  font-family: 'Muli', sans-serif;
+}
+.name-title {
+  font-family: 'Open Sans',sans-serif;
+}
 
 @media only screen and (min-width: 768px) {
   .full-screen { 
