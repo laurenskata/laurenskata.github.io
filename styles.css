@@ -1,5 +1,12 @@
 .card {
   height: 100%;
+  box-shadow: 0 10px 10px -10px #ccc;
+  border-radius: 20px;
+  border: 1px solid #e0e0e0;;
+}
+.is-card-image {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .name {
   font-family: 'Muli', sans-serif;

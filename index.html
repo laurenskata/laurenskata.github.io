@@ -10,8 +10,8 @@
 		<title>Laurens Verhulst</title>
 	</head>
 	<body>
-		<div class="container">
-			<nav class="navbar is-fixed-top" role="navigation" aria-label="page navigation">
+		<nav class="navbar is-fixed-top is-flex" role="navigation" aria-label="page navigation">
+			<div class="container">
 				<div class="navbar-brand">
 					<a class="navbar-item" href="#">
 						Home
@@ -29,7 +29,7 @@
 						Contact
 					</a>
 				</div>
-				<div class="navbar-end">
+				<div class="navbar-end is-flex">
 					<a class="navbar-item is-active" href="index.html">
 						Portfolio
 					</a>
@@ -37,8 +37,8 @@
 						Blog
 					</a>
 				</div>
-			</nav>
-		</div>
+			</div>
+		</nav>
 		<section class="section full-screen is-light">
 			<a name="Home" class="anchor">Test</a> <!-- Intro page-->
 			<div class="container">
@@ -82,192 +82,54 @@
 		<div class="container">
 			<h1 class="title">
 				<a name="Projects" class="nav-anchor anchor"></a>
-				Projects</a></h1>
-			<div class="buttons">
-				<div class="dropdown">
-					<div class="dropdown-trigger">
-						<button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-						<span>Filter Projects</span>
-						<span class="icon is-small">
-							<i class="fas fa-angle-down" aria-hidden="true"></i>
-						</span>
-						</button>
-					</div>
-					<div class="dropdown-menu" id="dropdown-menu" role="menu">
-						<div class="dropdown-content">
-							<div class="dropdown-item">
-								<p>
-									Filter Tags:
-								</p>
-							</div>
-							<a class="dropdown-item">
-								<span class="icon is-small">
-									<i class="fas fa-check"></i>
-								</span>
-								Rehabilitation
-							</a>
-							<a class="dropdown-item">
-								<span class="icon is-small">
-									<i class="fas fa-check"></i>
-								</span>
-								Group
-							</a>
-							<a class="dropdown-item">
-								<span class="icon is-small">
-									<i class="fas fa-check"></i>
-								</span>
-								Medical Devices
-							</a>
-							<a class="dropdown-item">
-								<span class="icon is-small">
-									<i class="fas fa-check"></i>
-								</span>
-								Individual
-							</a>
-							<a class="dropdown-item">
-								<span class="icon is-small">
-									<i class="fas fa-check"></i>
-								</span>
-								Design
-							</a>
-							<a class="dropdown-item">
-								<span class="icon is-small">
-									<i class="fas fa-check"></i>
-								</span>
-								CAD
-							</a>
-							<a class="dropdown-item">
-								<span class="icon is-small">
-									<i class="fas fa-check"></i>
-								</span>
-								Simulation
-							</a>
-							<hr class="dropdown-divider">
-							<div class="dropdown-item">
-								<p>
-									Filter Type:
-								</p>
-							</div>
-							<a class="dropdown-item">
-								<span class="icon is-small">
-									<i class="fas fa-check"></i>
-								</span>
-								Module
-							</a>
-							<a class="dropdown-item">
-								<span class="icon is-small">
-									<i class="fas fa-check"></i>
-								</span>
-								BSc Project
-							</a>
-							<a class="dropdown-item">
-								<span class="icon is-small">
-									<i class="fas fa-check"></i>
-								</span>
-								ME Project
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
+				Projects</a>
+			</h1>
 			<div class="columns">
-				<div class="column">
-					<div class="card">
-						<div class="card-image">
-							<figure class="image is-4by5">
-								<img src="images/mdd-kidney.jpg" alt="Urinary Stent Design">
+				<div class="modal">
+					<div class="modal-background"></div>
+					<div class="modal-card">
+						<header class="modal-card-head">
+						<p class="modal-card-title">Medical Device Design</p>
+						<button class="delete" aria-label="close"></button>
+						</header>
+						<section class="modal-card-body">
+							<figure class="image is-square">
+								<img class ="is-card-image" src="images/mdd-kidney.jpg" alt="Urinary Stent Design">
 							</figure>
-						</div>
-						<div class="card-content">
-							<div class="content">
-								<h3 class="title is-3">Medical Device Design</h3>
-								<h3 class="subtitle is-6">Module</h3>
-								<div class="tags">
-									<span class="tag is-dark">Medical Devices</span> <span class="tag is-dark">Design</span> <span class="tag is-dark">Group</span>
-								</div>
-								<div class="buttons">
-									<a class="button is-outlined">Read more</a>
+						</section>
+					</div>
+				</div>
+				<div class="column"> <!-- Row 1-->
+						<div class="card">
+							<div class="card-image">
+								<figure class="image is-card-image is-4by3">
+									<img class ="is-card-image" src="images/grasping.png" alt="Placeholder image">
+								</figure>
+							</div>
+							<div class="card-content">
+								<div class="content">
+									<h3 class="title is-4">Robot Grasping Simulation</h3>
+									<h3 class="subtitle is-6">BSc Thesis</h3>
+									<div class="tags">
+										<span class="tag is-dark">Robot</span> <span class="tag is-dark">ROS</span> <span class="tag is-dark">Simulation</span> <span class="tag is-dark">Individual</span>
+									</div>
+									<div class="buttons">
+										<a class="button is-outlined">Read more</a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="column">
-					<div class="card">
-						<div class="card-image">
-							<figure class="image is-3by4">
-								<img src="images/motion-analysis.jpg" alt="Motion analysis">
-							</figure>
-						</div>
-						<div class="card-content">
-							<div class="content">
-								<h3 class="title is-3">Motion Analysis</h3>
-								<h3 class="subtitle is-6">Module</h3>
-								<div class="tags">
-									<span class="tag is-dark">Biomechanics</span> <span class="tag is-dark">Analysis</span> <span class="tag is-dark">Group</span>
-								</div>
-								<div class="buttons">
-									<a class="button is-outlined">Read more</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 				<div class="column">
 					<div class="card">
 						<div class="card-image">
 							<figure class="image">
-								<img src="images/game-controller2.png" alt="Game controller for amputee">
+								<img class="is-card-image" src="images/dumbtrainer.png" alt="Placeholder image">
 							</figure>
 						</div>
 						<div class="card-content">
 							<div class="content">
-								<h3 class="is-3">Game Controller Design for Amputee</h3>
-								<h3 class="subtitle is-6">Module</h3>
-								<div class="tags">
-									<span class="tag is-dark">Rehabilitation</span><span class="tag is-dark">Design</span><span class="tag is-dark">CAD</span>
-									<span class="tag is-dark">Group</span><span class="tag is-dark">Rapid prototyping</span>
-								</div>
-								<div class="buttons">
-									<a class="button is-outlined">Read more</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="column">
-					<div class="card">
-						<div class="card-image">
-							<figure class="image is-4by3">
-								<img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-							</figure>
-						</div>
-						<div class="card-content">
-							<div class="content">
-								<h3 class="title is-3">Robot Grasping Simulation</h3>
-								<h3 class="subtitle is-6">BSc Thesis</h3>
-								<div class="tags">
-									<span class="tag is-dark">Robot</span> <span class="tag is-dark">ROS</span> <span class="tag is-dark">Simulation</span> <span class="tag is-dark">Individual</span>
-								</div>
-								<div class="buttons">
-									<a class="button is-outlined">Read more</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="columns">
-				<div class="column">
-					<div class="card">
-						<div class="card-image">
-							<figure class="image is-4by3">
-								<img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-							</figure>
-						</div>
-						<div class="card-content">
-							<div class="content">
-								<h3 class="is-3">Development and Analysis of perturbed cycling rig</h3>
+								<h3 class="title is-4">Development and Analysis of a Perturbed Cycling rig</h3>
 								<h3 class="subtitle is-6">ME Thesis</h3>
 								<div class="tags">
 									<span class="tag is-dark">Rehabilitation</span><span class="tag is-dark">Analysis</span> <span class="tag is-dark">Individual</span>
@@ -282,37 +144,79 @@
 				<div class="column">
 					<div class="card">
 						<div class="card-image">
-							<figure class="image is-4by3">
-								<img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+							<figure class="image">
+								<img class ="is-card-image" src="images/game-controller.png" alt="Game controller for amputee">
 							</figure>
 						</div>
 						<div class="card-content">
 							<div class="content">
-								<h3 class="is-3">Game of Life</h3>
+								<h3 class="title is-4">Game Controller Design for Amputee</h3>
+								<p class="subtitle is-6">Design and prototyping of a game controller for a double transradial amputee.</p>
+								<div class="tags">
+									<span class="tag is-dark">Rehabilitation</span><span class="tag is-dark">Design</span><span class="tag is-dark">CAD</span>
+									<span class="tag is-dark">Group</span><span class="tag is-dark">Rapid prototyping</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="columns"> <!-- Row 2-->
+				<div class="column">
+						<div class="card">
+							<div class="card-image">
+								<figure class="image is-square">
+									<img class ="is-card-image" src="images/mdd-kidney2.png" alt="Urinary Stent Design">
+								</figure>
+							</div>
+							<div class="card-content">
+								<div class="content">
+									<h3 class="title is-4">Medical Device Design</h3>
+									<p class="subtitle is-6">Design of an improved urinary stent that reduces pain during removal. <a>Read More...</a></p>
+									<div class="tags">
+										<span class="tag is-dark">Medical Devices</span> <span class="tag is-dark">Design</span> <span class="tag is-dark">Group</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="column">
+						<div class="card">
+							<div class="card-image">
+								<figure class="image is-square">
+									<img class ="is-card-image" src="images/motion-analysis2.png" alt="Motion analysis">
+								</figure>
+							</div>
+							<div class="card-content">
+								<div class="content">
+									<h3 class="title is-4">Motion Analysis</h3>
+									<p class="subtitle is-6">Kinematic and kinetic analysis of a single leg crouch by using high speed video.<br>
+									<a>Read More...</a></p>
+	
+									<div class="tags">
+										<span class="tag is-dark">Biomechanics</span> <span class="tag is-dark">Analysis</span> <span class="tag is-dark">Group</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				<div class="column">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-4by3">
+								<img class ="is-card-image" src="images/gameoflife.PNG" alt="Placeholder image">
+							</figure>
+						</div>
+						<div class="card-content">
+							<div class="content">
+								<h3 class="title is-4">Game of Life</h3>
 								<h3 class="subtitle is-6">Module</h3>
 								<div class="tags">
 									<span class="tag is-dark">Programming</span>
 									<span class="tag is-dark">Agile Development</span>
 									<span class="tag is-dark">Group</span>
 								</div>
-								<div class="buttons">
-									<a class="button is-outlined">Read more</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="column">
-					<div class="card">
-						<div class="card-image">
-							<figure class="image is-4by3">
-								<img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-							</figure>
-						</div>
-						<div class="card-content">
-							<div class="content">
-								<h3 class="is-3">Project 7</h3>
-								<div class="tags"><span class="tag is-dark">Group</span> <span class="tag is-dark">Medical Device Design</span> <span class="tag is-dark">Neural Engineering</span></div>
 								<div class="buttons">
 									<a class="button is-outlined">Read more</a>
 								</div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="has-navbar-fixed-top">
+<html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="styles.css">
@@ -7,29 +7,40 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" />
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200|Raleway|Open+Sans">
-		<title>Laurens Verhulst</title>
+        <link rel="import" href="/blogs/blog1.html">
+        <title>Laurens Verhulst</title>
 	</head>
 	<body>
-		<div class="container">
-			<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-				<div class="navbar-end">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="container">
+				<div class="navbar-brand">
 					<a class="navbar-item" href="index.html">
 						Portfolio
 					</a>
 					<a class="navbar-item is-active" href="index.html">
 						Blog
 					</a>
-				</div>
-			</nav>
-        </div>
+                </div>
+            </div>
+		</nav>
         <div class="container">
             <h1 class="title is-2">Blog</h1>
             <div class="columns">
                 <div class="column is-three-quarters">
-                    <div class="box">
-                        <p is-size-3>Blog Title</p> - <strong>Date</strong>
-                        <div class="content">
-                            
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title">Blog name</p>
+                            <p class="date">14 November 2018</p>
+                            <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Phasellus nec iaculis mauris.                                        
+                            </div>
+                            <a class="button">Read More</a>
                         </div>
                     </div>
                 </div>
