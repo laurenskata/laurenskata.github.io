@@ -59,7 +59,19 @@ path { fill: pink; }
 /* End Brain */
 
 .fa-envelope {
-  color: black;
+  color: white;
+}
+.fa-twitter {
+  color:white;
+}
+.fa-linkedin {
+  color:white;
+}
+.fa-strava {
+  color:white;
+}
+.fa-strava:hover{
+  color:#fc4c02;
 }
 .fa-envelope:hover {
   color: #DB4437;
@@ -75,4 +87,20 @@ a.anchor {
   position: relative;
   top: -75px;
   visibility: hidden;
+}
+.is-divider {
+  border-left: 1px solid darkgray;
+  margin: auto 10px;
+  height: 30px;
+}
+.contact {
+  font-family: 'Libre Franklin',sans-serif;
+  letter-spacing: 2.5px;
+  padding-bottom:3rem;
+}
+.navbar {
+  font-family: 'Libre Franklin',sans-serif;
+}
+.title {
+  font-family: 'Libre Franklin',sans-serif;
 }

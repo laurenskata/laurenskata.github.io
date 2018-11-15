@@ -3,10 +3,9 @@ Todo list
 add tooltip to Email
 Hyperlink smooth scrolling
 Add modal to cards projects
-Navbar centered
-filter tags
 add wrench
 add SCSS
 https://codepen.io/kevinjannis/pen/wJmGjZ
 Add testemonials to projects
 Add project descriptions, goals, results
+download CV button
