@@ -1,11 +1,26 @@
 Todo list
 ==================
+JS
+==================
 add tooltip to Email
 Hyperlink smooth scrolling
 Add modal to cards projects
+
+
+
+==================
+CSS
+==================
 add wrench
 add SCSS
 https://codepen.io/kevinjannis/pen/wJmGjZ
+Improve responsiveness
+
+
+
+==================
+HTML
+==================
 Add testemonials to projects
 Add project descriptions, goals, results
 download CV button
