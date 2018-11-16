@@ -2,8 +2,7 @@ Todo list
 ==================
 JS
 ==================
-add tooltip to Email
-Hyperlink smooth scrolling
+add tooltip transition
 Add modal to cards projects
 Add page slide animation
 

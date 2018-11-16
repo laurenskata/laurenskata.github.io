@@ -1,6 +1,9 @@
 'use strict';
 
 function copyToClipboard () {
+  let tooltip = document.querySelector('.tooltip');
+  tooltip.classList.add('visible');
+
   /* Get the text field */
   var el = document.createElement('textarea');
   // Set value (string to be copied)
@@ -15,4 +18,8 @@ function copyToClipboard () {
   document.execCommand('copy');
   // Remove temporary element
   document.body.removeChild(el);
+  
+  setTimeout( () => {
+    tooltip.classList.remove('visible')
+  }, 2000);
 }
