@@ -104,3 +104,10 @@ a.anchor {
 .title {
   font-family: 'Libre Franklin',sans-serif;
 }
+.is-256x256 {
+  height: 256px;
+  width: 256px;
+}
+.column.is-flex {
+  justify-content: center;
+}

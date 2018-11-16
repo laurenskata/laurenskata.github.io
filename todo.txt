@@ -5,6 +5,7 @@ JS
 add tooltip to Email
 Hyperlink smooth scrolling
 Add modal to cards projects
+Add page slide animation
 
 
 
@@ -12,9 +13,10 @@ Add modal to cards projects
 CSS
 ==================
 add wrench
-add SCSS
 https://codepen.io/kevinjannis/pen/wJmGjZ
+Change navbar colors
 Improve responsiveness
+Optimise styling
 
 
 
@@ -23,4 +25,3 @@ HTML
 ==================
 Add testemonials to projects
 Add project descriptions, goals, results
-download CV button
