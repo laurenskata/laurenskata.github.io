@@ -5,6 +5,7 @@ JS
 add tooltip transition
 Add modal to cards projects
 Add page slide animation
+highlight navbar element if in viewport
 
 
 
