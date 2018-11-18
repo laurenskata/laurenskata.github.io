@@ -1,27 +1,3 @@
 Todo list
 ==================
-JS
-==================
-add tooltip transition
-Add modal to cards projects
-Add page slide animation
-highlight navbar element if in viewport
-
-
-
-==================
-CSS
-==================
-add wrench
-https://codepen.io/kevinjannis/pen/wJmGjZ
-Change navbar colors
-Improve responsiveness
-Optimise styling
-
-
-
-==================
-HTML
-==================
-Add testemonials to projects
-Add project descriptions, goals, results
+https://trello.com/b/s6vJ0x2R/portfolio-board

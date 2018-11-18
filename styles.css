@@ -175,3 +175,6 @@ a.navbar-item {
 a.navbar-item.is-current {
   font-weight: 700;
 }
+h1.title.has-text-centered.has-space {
+  margin-bottom:35px;
+}

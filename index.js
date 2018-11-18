@@ -1,4 +1,7 @@
 'use strict';
+let modalActive = '';
+let closeButton = '';
+
 
 function copyToClipboard () {
   let tooltip = document.querySelector('.tooltip');
@@ -23,3 +26,23 @@ function copyToClipboard () {
     tooltip.classList.remove('visible')
   }, 2000);
 }
+function openModal(target){
+  modalActive = document.querySelector(target);
+  modalActive.classList.add('is-active');
+  closeButton = document.querySelector(".close-button");
+  closeButton.addEventListener("click", toggleModal);
+}
+
+function toggleModal() {
+  modalActive.classList.toggle("is-active");
+  modalActive = '';
+}
+
+function windowOnClick(event) {
+  if (event.target.className === 'modal-background') {
+    toggleModal();
+  }
+}
+
+
+window.addEventListener("click", windowOnClick);

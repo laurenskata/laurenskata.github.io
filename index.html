@@ -81,25 +81,37 @@
 		
 		<section class="section"> <!-- Projects -->
 		<div class="container">
-			<h1 class="title has-text-centered">
+			<h1 class="title has-text-centered has-space">
 				<a name="Projects" class="nav-anchor anchor"></a>
 				Projects</a>
 			</h1>
-			<div class="columns">
-				<div class="modal">
-					<div class="modal-background"></div>
-					<div class="modal-card">
-						<header class="modal-card-head">
-						<p class="modal-card-title">Medical Device Design</p>
-						<button class="delete" aria-label="close"></button>
-						</header>
-						<section class="modal-card-body">
-							<figure class="image is-square">
-								<img class ="is-card-image" src="images/mdd-kidney.jpg" alt="Urinary Stent Design">
-							</figure>
-						</section>
-					</div>
+			<div class="modal" id="grasping-modal"> <!-- Modals -->
+				<div class="modal-background"></div>
+				<div class="modal-card">
+					<header class="modal-card-head">
+					<p class="modal-card-title">Robot Grasping Simulation</p>
+					<button class="delete close-button" aria-label="close"></button>
+					</header>
+					<section class="modal-card-body">
+						<figure class="image">
+							<img class ="image" src="images/grasping.png" alt="Grasping Simulation">
+						</figure> <br>
+						<div class="content">
+							<h2>Project Description</h2>
+							This project was performed as part of the semi autonomous care robot project at Heemstech Innovative Technology (HiT) in the TU Delft Robo Valley. The goal was to develop
+							a simulation that could be used to train the robot using machine learning/AI to autonomously grasp object. The simulation was the first step towards an AI driven robot. A colleague from Avans was simultaneously working
+							on creating a grasping algorithm that was ultimately used to validate this simulation.
+							<h2>Project Technologies</h2>
+							The simulation was created for the Kinova Mico robotic arm. This arm was integrated with the iteration of the care robot Rose. The robot used the Robot Operating System (ROS) and therefore a key requirements
+							was that the simulation integrated with this as well. Gazebo was used for this.
+							<h2>Project Outcomes</h2>
+							The main outcome was the simulation that you can see on the picture above. The arm was able to grasp the bottle with a similar accuracy as measured in real life. The behavior of the robot was similar with
+							only minor differences in the fingertip actuation as the physical robot used under-actuated finger. This was not possible to be simulated due to time constraints. 
+						</div>
+					</section>
 				</div>
+			</div>
+			<div class="columns">
 				<div class="column"> <!-- Row 1-->
 						<div class="card">
 							<div class="card-image">
@@ -110,12 +122,9 @@
 							<div class="card-content">
 								<div class="content">
 									<h3 class="title is-4">Robot Grasping Simulation</h3>
-									<h3 class="subtitle is-6">BSc Thesis</h3>
+									<p class="subtitle is-6">BSc Thesis - The design and development of a robot grasping simulation for use with a care robot. <a onclick=openModal("#grasping-modal")>Read More...</a></p>
 									<div class="tags">
 										<span class="tag is-dark">Robot</span> <span class="tag is-dark">ROS</span> <span class="tag is-dark">Simulation</span> <span class="tag is-dark">Individual</span>
-									</div>
-									<div class="buttons">
-										<a class="button is-outlined">Read more</a>
 									</div>
 								</div>
 							</div>
@@ -130,13 +139,10 @@
 						</div>
 						<div class="card-content">
 							<div class="content">
-								<h3 class="title is-4">Development and Analysis of a Perturbed Cycling rig</h3>
-								<h3 class="subtitle is-6">ME Thesis</h3>
+								<h3 class="title is-4">Development and testing of a Perturbed Cycling rig</h3>
+								<p class="subtitle is-6">ME Project - Development and testing of a rig that investigates the effects of perturbed cycling. <a onclick=openModal("#perturbed-cycling")>Read More...</a></p>
 								<div class="tags">
 									<span class="tag is-dark">Rehabilitation</span><span class="tag is-dark">Analysis</span> <span class="tag is-dark">Individual</span>
-								</div>
-								<div class="buttons">
-									<a class="button is-outlined">Read more</a>
 								</div>
 							</div>
 						</div>
@@ -152,7 +158,7 @@
 						<div class="card-content">
 							<div class="content">
 								<h3 class="title is-4">Game Controller Design for Amputee</h3>
-								<p class="subtitle is-6">Design and prototyping of a game controller for a double transradial amputee.</p>
+								<p class="subtitle is-6">Design and prototyping of a game controller for a double transradial amputee. <a>Read More...</a></p>
 								<div class="tags">
 									<span class="tag is-dark">Rehabilitation</span><span class="tag is-dark">Design</span><span class="tag is-dark">CAD</span>
 									<span class="tag is-dark">Group</span><span class="tag is-dark">Rapid prototyping</span>
@@ -192,9 +198,7 @@
 							<div class="card-content">
 								<div class="content">
 									<h3 class="title is-4">Motion Analysis</h3>
-									<p class="subtitle is-6">Kinematic and kinetic analysis of a single leg crouch by using high speed video.<br>
-									<a>Read More...</a></p>
-	
+									<p class="subtitle is-6">Kinematic and kinetic analysis of a single leg crouch by using high speed video. <a>Read More...</a></p>
 									<div class="tags">
 										<span class="tag is-dark">Biomechanics</span> <span class="tag is-dark">Analysis</span> <span class="tag is-dark">Group</span>
 									</div>
@@ -212,14 +216,11 @@
 						<div class="card-content">
 							<div class="content">
 								<h3 class="title is-4">Game of Life</h3>
-								<h3 class="subtitle is-6">Module</h3>
+								<p class="subtitle is-6">Agile group development of the Hasbro's Game of Life in Java. <a>Read More...</a></p>
 								<div class="tags">
 									<span class="tag is-dark">Programming</span>
 									<span class="tag is-dark">Agile Development</span>
 									<span class="tag is-dark">Group</span>
-								</div>
-								<div class="buttons">
-									<a class="button is-outlined">Read more</a>
 								</div>
 							</div>
 						</div>
@@ -230,7 +231,7 @@
 		</section> <!-- /Projects-->
 		<section class="section full-screen"> <!-- Biography section start -->
 		<div class="container">
-			<h1 class="title has-text-centered"><a class="nav-anchor anchor" name="Biography"></a>Biography</h1>
+			<h1 class="title has-text-centered has-space"><a class="nav-anchor anchor" name="Biography"></a>Biography</h1>
 			<div class="columns is-vcentered">
 				<div class="column">
 					<figure class="image">
@@ -349,7 +350,7 @@
 									<p class="title is-5">Master of Engineering - Biomedical Engineering</p>
 									<p class="subtitle is-6">University College Dublin - <small>2017-2019</small></p>
 									<p>
-										<strong>Thesis:</strong> The development and testing of a testing rig for investigating the effects of force perturbations during cycling.<br />
+										<strong>Thesis:</strong> The Development and Testing of a Testing Rig for Investigating the Effects of Force Perturbations during Cycling.<br />
 										<strong>Modules:</strong> Neural Engineering, Rehabilitation Engineering, Software Engineering, Medical Device Design, Predictive Analytics, Entrepreneurship, 
 										Neurophysiology, Biomechanics, Biomaterials, Biomedical Imaging
 									</p>
