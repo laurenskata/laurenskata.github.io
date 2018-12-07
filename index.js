@@ -25,23 +25,27 @@ function copyToClipboard () {
   setTimeout( () => {
     tooltip.classList.remove('visible')
   }, 2000);
+  return;
 }
 function openModal(target){
   modalActive = document.querySelector(target);
   modalActive.classList.add('is-active');
   closeButton = document.querySelector(".close-button");
   closeButton.addEventListener("click", toggleModal);
+  return;
 }
 
 function toggleModal() {
   modalActive.classList.toggle("is-active");
   modalActive = '';
+  return;
 }
 
 function windowOnClick(event) {
   if (event.target.className === 'modal-background') {
     toggleModal();
   }
+  return;
 }
 
 
