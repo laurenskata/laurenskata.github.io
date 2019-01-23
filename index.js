@@ -28,7 +28,8 @@ function copyToClipboard () {
   return;
 }
 function openModal(target){
-  modalActive = document.querySelector(target);
+  modalActive = document.querySelector('#my-modal');
+  onModalOpen(target);
   modalActive.classList.add('is-active');
   closeButton = document.querySelector(".close-button");
   closeButton.addEventListener("click", toggleModal);
@@ -47,6 +48,35 @@ function windowOnClick(event) {
   }
   return;
 }
-
-
 window.addEventListener("click", windowOnClick);
+
+
+
+
+function onModalOpen(modal) {
+  let projectName = document.getElementById('#project-title');
+  let projectImage = document.getElementById('#modal-image');
+  let projectDescription = document.getElementById('#modal-description');
+
+  projectName.innerHTML = modalContent[modal].name;
+  projectImage.src = modalContent[modal].imagePath;
+  projectDescription.innerHTML = modalContent[modal].description;
+}
+
+
+const modalContent = {
+  grasping: {
+    name: "bla bla",
+    description:  `This project was performed as part of the semi autonomous care robot project at Heemstech Innovative Technology (HiT) in the TU Delft Robo Valley. The goal was to develop',
+    a simulation that could be used to train the robot using machine learning/AI to autonomously grasp object. The simulation was the first step towards an AI driven robot. A colleague from Avans was simultaneously working
+    on creating a grasping algorithm that was ultimately used to validate this simulation. `,
+    imagePath: "images/grasping.png"
+  },
+  cycling: {
+      name: "lalalla bla",
+      description:  `xxxxxxxxxxxxxxThis project was performed as part of the semi autonomous care robot project at Heemstech Innovative Technology (HiT) in the TU Delft Robo Valley. The goal was to develop',
+      a simulation that could be used to train the robot using machine learning/AI to autonomously grasp object. The simulation was the first step towards an AI driven robot. A colleague from Avans was simultaneously working
+      on creating a grasping algorithm that was ultimately used to validate this simulation. `,
+      imagePath: "images/dumbtrainer.png"
+    }
+};

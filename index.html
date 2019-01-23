@@ -90,22 +90,23 @@
 				<a name="Projects" class="nav-anchor anchor"></a>
 				Projects</a>
 			</h1>
-			<div class="modal" id="grasping-modal"> <!-- Modals -->
+			<div class="modal" id="my-modal"> <!-- Modals -->
 				<div class="modal-background"></div>
 				<div class="modal-card">
 					<header class="modal-card-head">
-					<p class="modal-card-title">Robot Grasping Simulation</p>
+					<p id="#project-title" class="modal-card-title">Robot Grasping Simulation</p>
 					<button class="delete close-button" aria-label="close"></button>
 					</header>
 					<section class="modal-card-body">
 						<figure class="image">
-							<img class ="image" src="images/grasping.png" alt="Grasping Simulation">
+							<img id ="#modal-image" class ="image" src="">
 						</figure> <br>
 						<div class="content">
 							<h2>Project Description</h2>
-							This project was performed as part of the semi autonomous care robot project at Heemstech Innovative Technology (HiT) in the TU Delft Robo Valley. The goal was to develop
-							a simulation that could be used to train the robot using machine learning/AI to autonomously grasp object. The simulation was the first step towards an AI driven robot. A colleague from Avans was simultaneously working
-							on creating a grasping algorithm that was ultimately used to validate this simulation.
+							<div id="#modal-description"></div>
+							This project was performed as part of the semi autonomous care robot project at Heemstech Innovative Technology (HiT) in the TU Delft Robo Valley. The goal was to develop',
+    						a simulation that could be used to train the robot using machine learning/AI to autonomously grasp object. The simulation was the first step towards an AI driven robot. A colleague from Avans was simultaneously working
+    						on creating a grasping algorithm that was ultimately used to validate this simulation.
 							<h2>Project Technologies</h2>
 							The simulation was created for the Kinova Mico robotic arm. This arm was integrated with the iteration of the care robot Rose. The robot used the Robot Operating System (ROS) and therefore a key requirements
 							was that the simulation integrated with this as well. Gazebo was used for this.
@@ -127,7 +128,8 @@
 							<div class="card-content">
 								<div class="content">
 									<h3 class="title is-4">Robot Grasping Simulation</h3>
-									<p class="subtitle is-6">BSc Thesis - The design and development of a robot grasping simulation for use with a care robot. <a onclick=openModal("#grasping-modal")>Read More...</a></p>
+									<p class="subtitle is-6">BSc Thesis - The design and development of a robot grasping simulation for use with a care robot. 
+										<a onclick=openModal("grasping")>Read More...</a></p>
 									<div class="tags">
 										<span class="tag is-dark">Robot</span> <span class="tag is-dark">ROS</span> <span class="tag is-dark">Simulation</span> <span class="tag is-dark">Individual</span>
 									</div>
@@ -145,7 +147,8 @@
 						<div class="card-content">
 							<div class="content">
 								<h3 class="title is-4">Development and testing of a Perturbed Cycling rig</h3>
-								<p class="subtitle is-6">ME Project - Development and testing of a rig that investigates the effects of perturbed cycling. <a onclick=openModal("#perturbed-cycling")>Read More...</a></p>
+								<p class="subtitle is-6">ME Project - Development and testing of a rig that investigates the effects of perturbed cycling. 
+									<a onclick=openModal("cycling")>Read More...</a></p>
 								<div class="tags">
 									<span class="tag is-dark">Rehabilitation</span><span class="tag is-dark">Analysis</span> <span class="tag is-dark">Individual</span>
 								</div>
