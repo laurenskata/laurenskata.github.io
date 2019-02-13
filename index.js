@@ -110,7 +110,7 @@ const modalContent = {
     Analysis was performed using Kinovea and MATLAB. After the data was extracted from the video, we did a biomechanical analysis on calculated the forces involved in this motion. `,
     technologies:`We used Kinovea, an open source software used in motion analysis in video, and MATLAB for completing the biomechanical analysis.`,
     outcomes: `We created an overview of all the forces involved in the single leg crouch. This gave us a better understanding of biomechanical analysis. `,
-    imagePath: "images/motion-analysis2.png"
+    imagePath: "images/motion-analysis2.PNG"
     },
   life: {
     name: "Game of Life",
@@ -118,6 +118,6 @@ const modalContent = {
     We designed our application using Use Case diagrams, sequence diagrams and class diagrams. Finally we created unit tests for the game.`,
     technologies:`The game was developed in Java using Agile Development Methods.`,
     outcomes: `The game that we designed and programmed was fully playable and provided full functionalities similar to the offline version of the game.`,
-    imagePath: "images/gameoflife.png"
+    imagePath: "images/gameoflife.PNG"
     }  
 };
