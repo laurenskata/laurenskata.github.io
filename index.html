@@ -94,7 +94,7 @@
 				<div class="modal-background"></div>
 				<div class="modal-card">
 					<header class="modal-card-head">
-					<p id="#project-title" class="modal-card-title">Robot Grasping Simulation</p>
+					<p id="#project-title" class="modal-card-title"></p>
 					<button class="delete close-button" aria-label="close"></button>
 					</header>
 					<section class="modal-card-body">
@@ -104,15 +104,10 @@
 						<div class="content">
 							<h2>Project Description</h2>
 							<div id="#modal-description"></div>
-							This project was performed as part of the semi autonomous care robot project at Heemstech Innovative Technology (HiT) in the TU Delft Robo Valley. The goal was to develop',
-    						a simulation that could be used to train the robot using machine learning/AI to autonomously grasp object. The simulation was the first step towards an AI driven robot. A colleague from Avans was simultaneously working
-    						on creating a grasping algorithm that was ultimately used to validate this simulation.
 							<h2>Project Technologies</h2>
-							The simulation was created for the Kinova Mico robotic arm. This arm was integrated with the iteration of the care robot Rose. The robot used the Robot Operating System (ROS) and therefore a key requirements
-							was that the simulation integrated with this as well. Gazebo was used for this.
+							<div id="#modal-technologies"></div>
 							<h2>Project Outcomes</h2>
-							The main outcome was the simulation that you can see on the picture above. The arm was able to grasp the bottle with a similar accuracy as measured in real life. The behavior of the robot was similar with
-							only minor differences in the fingertip actuation as the physical robot used under-actuated finger. This was not possible to be simulated due to time constraints. 
+							<div id="#modal-outcomes"></div> 
 						</div>
 					</section>
 				</div>
@@ -166,7 +161,7 @@
 						<div class="card-content">
 							<div class="content">
 								<h3 class="title is-4">Game Controller Design for Amputee</h3>
-								<p class="subtitle is-6">Design and prototyping of a game controller for a double transradial amputee. <a>Read More...</a></p>
+								<p class="subtitle is-6">Design and prototyping of a game controller for a double transradial amputee. <a onclick=openModal("rehabilitation")>Read More...</a></p>
 								<div class="tags">
 									<span class="tag is-dark">Rehabilitation</span><span class="tag is-dark">Design</span><span class="tag is-dark">CAD</span>
 									<span class="tag is-dark">Group</span><span class="tag is-dark">Rapid prototyping</span>
@@ -188,7 +183,7 @@
 							<div class="card-content">
 								<div class="content">
 									<h3 class="title is-4">Medical Device Design</h3>
-									<p class="subtitle is-6">Design of an improved urinary stent that reduces pain during removal. <a>Read More...</a></p>
+									<p class="subtitle is-6">Design of an improved urinary stent that reduces pain during removal. <a onclick=openModal("mdd")>Read More...</a></p>
 									<div class="tags">
 										<span class="tag is-dark">Medical Devices</span> <span class="tag is-dark">Design</span> <span class="tag is-dark">Group</span>
 									</div>
@@ -206,7 +201,7 @@
 							<div class="card-content">
 								<div class="content">
 									<h3 class="title is-4">Motion Analysis</h3>
-									<p class="subtitle is-6">Kinematic and kinetic analysis of a single leg crouch by using high speed video. <a>Read More...</a></p>
+									<p class="subtitle is-6">Kinematic and kinetic analysis of a single leg crouch by using high speed video. <a onclick=openModal("biomechanics")>Read More...</a></p>
 									<div class="tags">
 										<span class="tag is-dark">Biomechanics</span> <span class="tag is-dark">Analysis</span> <span class="tag is-dark">Group</span>
 									</div>
@@ -224,7 +219,7 @@
 						<div class="card-content">
 							<div class="content">
 								<h3 class="title is-4">Game of Life</h3>
-								<p class="subtitle is-6">Agile group development of the Hasbro's Game of Life in Java. <a>Read More...</a></p>
+								<p class="subtitle is-6">Agile group development of the Hasbro's Game of Life in Java. <a onclick=openModal("life")>Read More...</a></p>
 								<div class="tags">
 									<span class="tag is-dark">Programming</span>
 									<span class="tag is-dark">Agile Development</span>
@@ -243,15 +238,14 @@
 			<div class="columns is-vcentered">
 				<div class="column">
 					<figure class="image">
-						<img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+						<img src="images/biography-laurens.jpg" alt="Laurens Verhulst">
 					</figure>
 				</div>
 				<div class="column">
 					<div class="box">
 						<p class="is-4">
 							Hi, my name is Laurens, as you will have seen from the banner above. I am an enthusiastic biomedical engineer and currently completing my Master's degree at University College Dublin.
-							Currently I am living in the capital of Ireland, Dublin, but originally I am from the Netherlands. I was born in a city that you probably have never heard of. Before my Master's I completed a Bachelor's degree
-							in Mechatronics in Breda, Netherlands. 
+							Currently I am living in the capital of Ireland, Dublin, but originally I am from the Netherlands. Before my Master's I completed a Bachelor's degree in Mechatronics in Breda, Netherlands. 
 						</p>
 						<hr></hr>
 						<p class="is-4">
@@ -259,12 +253,12 @@
 						</p>
 						<hr></hr>
 						<p class="is-4">I love to be outdoors and hike through the mountains and hills not only in Ireland but also when traveling. I have hiked (together with my girlfriend) to the top of the El Teide on Tenerife,
-							walked the path of the gods in Italy. Another one of my hobbies is cycling, which is almost mandatory as a Dutch person. However,  I have develop it as a hobby here in Ireland. Finally, I love to develop new skills. An example is this website,
+							walked the path of the gods in Italy. Another one of my hobbies is cycling, which is almost mandatory as a Dutch person. However,  I have develop it as a hobby here in Ireland. Finally, I love to develop new skills. An example is this portfolio website,
 							before this I did not have much experience in HTML, CSS and JavaScript programming.
 						</p>
 						<hr></hr>
 						<p class="is-4">
-							My perfect job would have a good work-life balance and flexibility in work hours. I like to work in small to medium sized teams with a diverse background. Currently, I am looking to find a job in the Netherlands as a software focused Biomedical Engineer.
+							My perfect job would be in a field that combines medical device design and neural enginering. It would need to have a good work-life balance and flexibility in working hours. I prefer to work in medium sized teams with a multidisciplinary background. Currently, I am looking to find a job in the Netherlands as a Biomedical Engineer.
 							Do you know where to find a job like this? If so, contact me immediately!
 						</p>
 					</div>
